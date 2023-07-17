@@ -12,7 +12,7 @@
 /* iPads (portrait) ----------- */
 @media only screen and (max-width: 1024px) {
   .navbar.active-sidebar {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     transition: 0.2s;
   }
 
@@ -55,7 +55,7 @@
   }
 
   .navbar-menu a.active-menu {
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
   .navbar-menu.active-sidebar {
@@ -78,7 +78,7 @@
 
   #close-btn ion-icon.active-sidebar {
     background-color: var(--primary-white-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
   .heading {
@@ -123,7 +123,7 @@
 /* Smartphones (portrait) (ie: Galaxy 1) */
 @media only screen and (max-width: 414px) {
   html {
-    font-size: 55%;
+    font-size: 57%;
   }
 
   .navbar-menu {
@@ -143,11 +143,11 @@
   }
 
   .heading {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .hero-desc {
-    max-width: 85%;
-    font-size: 1.5rem;
+    max-width: 90%;
+    /* font-size: 1.5rem; */
   }
 }
