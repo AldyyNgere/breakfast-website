@@ -3,12 +3,16 @@
   --primary-color: #e86e2a;
   --primary-white-color: #fdf1ea;
   --primary-hover-color: #d16326;
+  --secondary-color: #3ccf4e;
+  --secondary-hover-color: #36ba46;
+  --secondary-dark-color: #30a63e;
+  --grey-color: #212529;
 }
 
 /* FIRST SECTION  */
 .first-section {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -107,4 +111,67 @@
 /* ************* */
 
 .hero-section {
+  padding-top: 15rem;
+}
+
+.hero-container {
+  max-width: 95%;
+  margin: 0 auto;
+  color: var(--primary-white-color);
+  text-align: center;
+}
+
+.heading {
+  font-size: 7.451rem;
+  line-height: 1.1;
+  letter-spacing: -0.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-desc {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.hero-btns-box button {
+  display: inline-block;
+  margin-right: 1rem;
+  font-family: inherit;
+  padding: 1.2rem 2.4rem;
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+  transition: 0.2s;
+}
+
+.hero-btns-box button {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.hero-btns-box .primary-btn:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.hero-btns-box .primary-btn a {
+  color: var(--primary-white-color);
+  font-size: 1.563rem;
+}
+
+.hero-btns-box .secondary-btn {
+  background: none;
+  border: solid 1px var(--secondary-color);
+}
+
+.hero-btns-box .secondary-btn a {
+  color: var(--primary-white-color);
+  font-size: 1.563rem;
+}
+
+.hero-btns-box .secondary-btn a.cg-color {
+  color: var(--secondary-color);
+}
+
+.heading .primary-text {
+  color: var(--secondary-color);
 }

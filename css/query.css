@@ -12,7 +12,7 @@
 /* iPads (portrait) ----------- */
 @media only screen and (max-width: 1024px) {
   .navbar.active-sidebar {
-    background: var(--primary-white-color);
+    background: var(--primary-color);
     transition: 0.2s;
   }
 
@@ -25,8 +25,12 @@
   }
 
   .brand .logo.active-sidebar {
-    color: var(--black-color);
+    color: var(--grey-color);
     transition: 0.2s;
+  }
+
+  .brand .logo .primary-text.active-sidebar {
+    color: var(--primary-white-color);
   }
 
   .navbar-menu {
@@ -40,10 +44,18 @@
     gap: 3rem;
     align-items: center;
     padding-top: 5rem;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(8.9px);
-    -webkit-backdrop-filter: blur(8.9px);
+    opacity: 1;
+    background: var(--primary-white-color);
     transition: 0.2s;
+  }
+
+  .navbar-menu a {
+    color: var(--black-color);
+    font-weight: 600;
+  }
+
+  .navbar-menu a.active-menu {
+    color: var(--primary-color);
   }
 
   .navbar-menu.active-sidebar {
@@ -63,10 +75,30 @@
     display: inline-block;
     transition: 0.2s;
   }
+
+  #close-btn ion-icon.active-sidebar {
+    background-color: var(--primary-white-color);
+    color: var(--primary-color);
+  }
+
+  .heading {
+    font-size: 5.96rem;
+  }
+
+  .hero-desc {
+    max-width: 60%;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 5.96rem;
+  }
+
+  .hero-desc {
+    max-width: 60%;
+  }
 }
 
 /* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
@@ -78,12 +110,20 @@
   .brand .logo {
     font-size: 2.6rem;
   }
+
+  .heading {
+    font-size: 5.5rem;
+  }
+
+  .hero-desc {
+    max-width: 70%;
+  }
 }
 
 /* Smartphones (portrait) (ie: Galaxy 1) */
 @media only screen and (max-width: 414px) {
   html {
-    font-size: 58.5%;
+    font-size: 55%;
   }
 
   .navbar-menu {
@@ -100,5 +140,14 @@
 
   .navbar-menu a:last-child {
     display: inline-block;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .hero-desc {
+    max-width: 85%;
+    font-size: 1.5rem;
   }
 }
