@@ -1,0 +1,104 @@
+:root {
+  --black-color: #0a0a0a;
+  --primary-color: #e86e2a;
+  --primary-white-color: #fdf1ea;
+  --primary-hover-color: #d16326;
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (max-width: 1224px) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width: 1024px) {
+  .navbar.active-sidebar {
+    background: var(--primary-white-color);
+    transition: 0.2s;
+  }
+
+  .first-section.active-sidebar {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+      url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+  }
+
+  .brand .logo.active-sidebar {
+    color: var(--black-color);
+    transition: 0.2s;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 5rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    transition: 0.2s;
+  }
+
+  .navbar-menu.active-sidebar {
+    right: 0;
+  }
+
+  #menu-btn {
+    display: inline-block;
+    transition: 0.2s;
+  }
+
+  #menu-btn.active-sidebar {
+    display: none;
+  }
+
+  #close-btn.active-sidebar {
+    display: inline-block;
+    transition: 0.2s;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 768px) {
+}
+
+/* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 60%;
+  }
+
+  .brand .logo {
+    font-size: 2.6rem;
+  }
+}
+
+/* Smartphones (portrait) (ie: Galaxy 1) */
+@media only screen and (max-width: 414px) {
+  html {
+    font-size: 58.5%;
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .brand .logo {
+    font-size: 2.6rem;
+  }
+
+  .navbar-btns-box button {
+    display: none;
+  }
+
+  .navbar-menu a:last-child {
+    display: inline-block;
+  }
+}
