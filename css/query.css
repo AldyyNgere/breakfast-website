@@ -20,6 +20,15 @@
     transition: 0.2s;
   }
 
+  .navbar-btns-box button:first-child.active-sidebar {
+    background-color: var(--primary-white-color);
+  }
+
+  .navbar-btns-box button:first-child a.active-sidebar {
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
   .first-section.active-sidebar {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
       url(../img/hero.jpg);

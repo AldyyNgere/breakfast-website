@@ -24,6 +24,12 @@ function sidebar() {
   const close_btn = document.getElementById("close-btn");
   const close_btn_icon = document.querySelector("#close-btn ion-icon");
   const navbar = document.querySelector(".navbar");
+  const navbar_first_btn = document.querySelector(
+    ".navbar-btns-box button:first-child"
+  );
+  const navbar_first_btn_link = document.querySelector(
+    ".navbar-btns-box button:first-child a"
+  );
   const logo = document.querySelector(".brand .logo");
   const logo_primary = document.querySelector(".brand .logo .primary-text");
   const first_section = document.querySelector(".first-section");
@@ -35,6 +41,8 @@ function sidebar() {
     close_btn.classList.add("active-sidebar");
     close_btn_icon.classList.add("active-sidebar");
     navbar.classList.add("active-sidebar");
+    navbar_first_btn.classList.add("active-sidebar");
+    navbar_first_btn_link.classList.add("active-sidebar");
     logo.classList.add("active-sidebar");
     first_section.classList.add("active-sidebar");
     logo_primary.classList.add("active-sidebar");
@@ -47,6 +55,8 @@ function sidebar() {
     close_btn.classList.remove("active-sidebar");
     close_btn_icon.classList.remove("active-sidebar");
     navbar.classList.remove("active-sidebar");
+    navbar_first_btn.classList.remove("active-sidebar");
+    navbar_first_btn_link.classList.remove("active-sidebar");
     logo.classList.remove("active-sidebar");
     first_section.classList.remove("active-sidebar");
     logo_primary.classList.remove("active-sidebar");
